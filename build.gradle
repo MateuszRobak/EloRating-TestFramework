@@ -2,8 +2,8 @@ plugins {
     id 'java'
 }
 
-group 'com.williamhill.gptask'
-version '1.0-SNAPSHOT'
+group 'EloRating'
+version '1.0'
 
 sourceCompatibility = 1.8
 
