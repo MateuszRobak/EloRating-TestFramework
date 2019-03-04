@@ -14,6 +14,7 @@ public class MainTest extends Configuration{
         Profile profile = mainPage.goToLeague("League4");
         PlayersPage players = profile.assignProfileToCreatedLeague();
         players.addPlayer();
+        //
     }
 
 
