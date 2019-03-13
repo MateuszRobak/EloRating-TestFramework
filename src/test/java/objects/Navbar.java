@@ -1,18 +1,22 @@
 package objects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
-public class Navbar {
+public class Navbar extends BaseObjects{
+    WebDriver driver;
 
-    public static By dashboard = By.xpath("//a[contains(text(),'Dashboard')]");
+    public Navbar(WebDriver driver){
+        super(driver);
+        this.driver = driver;
+        PageFactory.initElements(driver,this);
+    }
 
-    public static By matchesLink = By.xpath("//a[contains(text(),'Matches')]");
 
-    public static By playersLink = By.xpath("//a[contains(text(),'Players')]");
 
-    public static By queueLink = By.xpath("//a[contains(text(),'Queue')]");
 
 }

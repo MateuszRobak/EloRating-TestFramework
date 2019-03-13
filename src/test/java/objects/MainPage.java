@@ -8,88 +8,118 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPage extends BaseObjects{
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class MainPage extends BaseObjects {
     WebDriver driver;
-    @FindBy(how = How.XPATH,using="//input[@placeholder='League name']")
-    public  WebElement leagueNameInput;
+    @FindBy(how = How.XPATH, using = "//input[@placeholder='League name']")
+    private WebElement leagueNameInput;
 
-    @FindBy(how = How.XPATH,using="//button[contains(text(),'Create league')]")
-    public  WebElement createLeagueButton;
+    @FindBy(how = How.XPATH, using = "//button[contains(text(),'Create league')]")
+    private WebElement createLeagueButton;
 
-    @FindBy(how = How.XPATH, using="//span[contains(text(),'Sign in')]")
-    public  WebElement signIn;
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Sign in')]")
+    private WebElement signIn;
 
-    @FindBy(how = How.XPATH, using ="//input[@name='identifier']")
-    public  WebElement login;
+    @FindBy(how = How.XPATH, using = "//input[@name='identifier']")
+    private WebElement login;
 
-    @FindBy(how = How.XPATH, using ="//content[@class='CwaK9']/span[1]")
-    public  WebElement next;
+    @FindBy(how = How.XPATH, using = "//content[@class='CwaK9']/span[1]")
+    private WebElement next;
 
-    @FindBy(how = How.XPATH, using="//input[@name='password']")
-    public  WebElement password;
+    @FindBy(how = How.XPATH, using = "//input[@name='password']")
+    private WebElement password;
 
     @FindBy(how = How.XPATH, using = "//button[@class='btn btn-success btn-lg btn-block']")
-    public  WebElement assignLeague;
+    private WebElement assignLeague;
 
-    @FindBy(how = How.XPATH, using ="//h4[contains(text(),'Success!')]")
-    public  WebElement sucessfullLeagueAssignment;
+    @FindBy(how = How.XPATH, using = "//h4[contains(text(),'Success!')]")
+    private WebElement sucessfullLeagueAssignment;
 
     @FindBy(how = How.XPATH, using = "//img[@class='rounded']")
-    public  WebElement rounded;
+    private WebElement rounded;
 
     @FindBy(how = How.XPATH, using = "//div[@class='input-group input-group-lg mr-sm-2 mb-sm-0']//input[@id='leagueToSearchForm']")
-    public WebElement leagueToSearchForm;
+    private WebElement leagueToSearchForm;
 
     @FindBy(how = How.XPATH, using = "//div[@class='input-group input-group-lg mr-sm-2 mb-sm-0']//button[@type='submit'][contains(text(),'Go to')]")
-    public WebElement goTo;
+    private WebElement goTo;
 
     @FindBy(how = How.ID, using = "ngb-typeahead-0-1")
-    public WebElement typehead;
+    private WebElement typehead;
 
-    public static By typehead2(String leagueName){
+    @FindBy(how = How.XPATH, using = "//button[@class='btn btn-info btn-lg btn-block']")
+    private WebElement assignPlayer;
+
+    @FindBy(how = How.XPATH, using = "//h2[@class='mt-2']")
+    private WebElement playerMatchesHeader;
+
+    private static By typehead2(String leagueName) {
         return By.xpath("//span[contains(text(),'" + leagueName + "')]");
     }
 
 
-    public MainPage(WebDriver driver){
+    public MainPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
-    public MainPage signIn() throws Exception{
+    public MainPage signIn() throws Exception {
         clickElement(signIn);
         String parentWindow = driver.getWindowHandle();
-        for(String winHandle : driver.getWindowHandles())
-        {
+        for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
             driver.manage().window().maximize();
 
         }
-        typeText(login,Selectors.username);
+        typeText(login, Selectors.username);
         clickElement(next);
         Thread.sleep(1000);
         typeText(password, Selectors.passwordUser);
         clickElement(next);
         driver.switchTo().window(parentWindow);
         isElementVisible(rounded);
-        return this;    }
+        return this;
+    }
 
+    private static String setLeagueName() {
+        Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy-HH:mm:ss");
+        String leagueName = dateFormat.format(date);
+        return leagueName;
+    }
 
-    public Profile createLeague(String leagueName){
-        typeText(leagueNameInput,leagueName);
+    public MainPage createLeague() {
+        typeText(leagueNameInput, setLeagueName());
         clickElement(createLeagueButton);
         clickElement(assignLeague);
         isElementVisible(sucessfullLeagueAssignment);
-        return new Profile(driver);
+        assignProfileToCreatedLeague();
+        return this;
     }
 
-    public Profile goToLeague(String leagueName){
-        typeText(leagueToSearchForm,leagueName);
+    public MainPage goToLeague(String leagueName) {
+        typeText(leagueToSearchForm, leagueName);
         clickElement(typehead2(leagueName));
         clickElement(goTo);
-        return new Profile(driver);
+        return this;
+    }
+
+    private MainPage assignProfileToCreatedLeague() {
+        goToPlayersPage();
+        clickElement(assignPlayer);
+        isElementVisible(playerMatchesHeader);
+        return this;
     }
 
 
 }
+
+
+
+
+
+
+
