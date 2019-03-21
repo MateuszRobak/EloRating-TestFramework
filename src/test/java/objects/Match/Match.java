@@ -5,8 +5,8 @@ import objects.Player.Player;
 public class Match {
     String plaeyrOne;
     String playerTwo;
-    int hour;
-    int minute;
+    String hour;
+    String minute;
     Player player;
 
     int id;
@@ -35,20 +35,20 @@ public class Match {
         this.playerTwo = playerTwo;
     }
 
-    public int getHour() {
+    public String getHour() {
         return hour;
     }
 
-    public void setHour(int hour) {
+    public void setHour(String hour) {
         this.hour = hour;
     }
 
-    public int getMinute() {
+    public String getMinute() {
         return minute;
     }
 
-    public void setMinute(int minute) {
-        this.minute = this.minute;
+    public void setMinute(String minute) {
+        this.minute = minute;
     }
 
 

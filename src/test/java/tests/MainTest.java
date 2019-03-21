@@ -1,10 +1,9 @@
 package tests;
 
 import config.Configuration;
+import helpers.Dates;
 import objects.*;
-import objects.Match.MatchCreator;
 import objects.Player.Player;
-import objects.Player.PlayerCreator;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -13,14 +12,31 @@ public class MainTest extends Configuration{
 
 
     @Test()
-    public void test() throws Exception{
+    public void createMatchFromExistingPlayerList() throws Exception {
+        MainPage mainPage = openMainPage().signIn().goToLeague("xxxx");
+        PlayersPage playersPage = mainPage.goToPlayersPage();
+        List<Player> playerList = playersPage.getPlayersList();
+        MatchesPage matchesPage = playersPage.goToMatches();
+        matchesPage.createMatchFromPlayersList(playerList);
+    }
+
+    @Test()
+    public void createLeaguePlayersAndMatch() throws Exception {
         MainPage mainPage = openMainPage().signIn().createLeague();
-        PlayersPage playersPage = new PlayersPage(driver);
-        playersPage.addPlayer(2,false);
+        PlayersPage playersPage = mainPage.goToPlayersPage();
+        List<Player> playerList = playersPage.createPlayers(4,false);
+        MatchesPage matchesPage = playersPage.goToMatches();
+        matchesPage.createMatch(playerList,0,1,10);
+        matchesPage.createMatch(playerList,2,3, 20);
 
 
-        MatchesPage matchesPage = mainPage.goToMatches();
-        matchesPage.createMatch("Test0","Test01");
+
+
+//        List<Player> playerList = playersPage.createPlayers(2,false);
+//
+//        MatchesPage matchesPage = mainPage.goToMatches();
+//        matchesPage.createMatch(playerList,0,1);
+
 
 
 
