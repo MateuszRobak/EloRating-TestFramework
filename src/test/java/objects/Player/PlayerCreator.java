@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerCreator {
-    WebDriver driver;
     public static java.lang.String playerName = "Test";
 
     public ArrayList<Player> createPlayers(int quantity){

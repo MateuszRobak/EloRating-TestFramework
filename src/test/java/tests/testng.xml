@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Recruitment Suit" verbose="1">
-    <test name="Betting Tests">
+<suite name="Elo Suite" verbose="1">
+    <test name="AddPlayers">
         <classes>
             <class name="tests.MainTest"/>
         </classes>

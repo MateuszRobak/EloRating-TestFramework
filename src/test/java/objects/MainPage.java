@@ -113,8 +113,6 @@ public class MainPage extends BaseObjects {
         isElementVisible(playerMatchesHeader);
         return this;
     }
-
-
 }
 
 

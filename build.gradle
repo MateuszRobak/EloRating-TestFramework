@@ -22,6 +22,8 @@ dependencies {
 }
 test {
     systemProperty "browser", System.getProperty("browser")
-    useTestNG()
+    useTestNG(){
+        suites 'src/test/java/tests/testng.xml'
+    }
 }
 

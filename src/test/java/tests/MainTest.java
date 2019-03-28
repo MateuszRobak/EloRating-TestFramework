@@ -11,7 +11,17 @@ import java.util.List;
 public class MainTest extends Configuration{
 
 
-    @Test()
+//    @Test()
+    public void createMatchFromExistingPlayerList2() throws Exception {
+        MainPage mainPage = openMainPage().signIn().createLeague();
+        PlayersPage playersPage = mainPage.goToPlayersPage();
+        playersPage.createPlayers(2,false);
+        List<Player> playerList = playersPage.getPlayersList();
+        MatchesPage matchesPage = playersPage.goToMatches();
+        matchesPage.createMatch(playerList, 1,2,10);
+    }
+
+//    @Test()
     public void createMatchFromExistingPlayerList() throws Exception {
         MainPage mainPage = openMainPage().signIn().goToLeague("xxxx");
         PlayersPage playersPage = mainPage.goToPlayersPage();
@@ -24,30 +34,8 @@ public class MainTest extends Configuration{
     public void createLeaguePlayersAndMatch() throws Exception {
         MainPage mainPage = openMainPage().signIn().createLeague();
         PlayersPage playersPage = mainPage.goToPlayersPage();
-        List<Player> playerList = playersPage.createPlayers(4,false);
+        List<Player> playerList = playersPage.createPlayers(10,false);
         MatchesPage matchesPage = playersPage.goToMatches();
-        matchesPage.createMatch(playerList,0,1,10);
-        matchesPage.createMatch(playerList,2,3, 20);
-
-
-
-
-//        List<Player> playerList = playersPage.createPlayers(2,false);
-//
-//        MatchesPage matchesPage = mainPage.goToMatches();
-//        matchesPage.createMatch(playerList,0,1);
-
-
-
-
-
-
-
-
-
-
-
+        matchesPage.createMatchFromPlayersList(playerList);
     }
-
-
 }

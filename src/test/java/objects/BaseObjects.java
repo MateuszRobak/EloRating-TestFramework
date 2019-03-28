@@ -21,6 +21,7 @@ public class BaseObjects {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+
     public void isElementVisible(By element){
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
     }

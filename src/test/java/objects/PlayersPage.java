@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,13 +25,13 @@ public class PlayersPage extends BaseObjects {
     public WebElement username;
 
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Create')]")
-    public WebElement createPlayer;
+    private WebElement createPlayer;
 
     @FindBy(how = How.XPATH, using = "//h2[contains(text(),'Players list')]")
-    public WebElement playersPageHeader;
+    private WebElement playersPageHeader;
 
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Yes')]")
-    public WebElement yesButton;
+    private WebElement yesButton;
 
 
     private static By playerName(java.lang.String playerName) {
@@ -51,15 +52,19 @@ public class PlayersPage extends BaseObjects {
 
     private static By playersQ = By.xpath("//table[1]//tbody[1]/tr");
 
+    private static int minimumPlayersQuantity = 2;
+
     private static int playersQuantity(WebDriver driver){
         int playersQuantity = driver.findElements(playersQ).size();
-        return playersQuantity;
+        return playersQuantity+1;
     }
+
     public PlayersPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
 
 //    public List<Player> getPlayers(){
 //        goToPlayersPage();
@@ -73,16 +78,33 @@ public class PlayersPage extends BaseObjects {
 //    }
 
 
-    public ArrayList<Player> getPlayersList(){
-//        int playersQuantity = driver.findElements(playersQ).size();
+    public ArrayList<Player> getPlayersList() {
         ArrayList<Player> players = new ArrayList<>();
-        for(int i = 1; i<playersQuantity(driver)+1; i++){
+        if (playersQuantity(driver) < 2) {
+            Assert.assertNotEquals(playersQuantity(driver),minimumPlayersQuantity,"Players quantity is lower than " + minimumPlayersQuantity);
+        }
+        for (int i = 1; i < playersQuantity(driver); i++) {
             Player player = new Player();
             player.setName(getText(getPlayerName(i)));
             players.add(player);
         }
+
         return players;
     }
+
+//    public ArrayList<Player> getPlayersList(){
+//        ArrayList<Player> players = new ArrayList<>();
+//        if(playersQuantity(driver)+1 >= 2){
+//            for(int i = 1; i<playersQuantity(driver)+1; i++){
+//                Player player = new Player();
+//                player.setName(getText(getPlayerName(i)));
+//                players.add(player);
+//            }
+//        } else{
+//            Assert.assertFalse(true);
+//        }
+//        return players;
+//    }
 
     public List<Player> createPlayers(int playersQuantity, boolean removePlayers) throws Exception {
         goToPlayersPage();
@@ -95,7 +117,7 @@ public class PlayersPage extends BaseObjects {
             if (removePlayers) {
                 removePlayer(player);
             }
-        } return playerList;
+        } return getPlayersList();
     }
 
     public void removePlayer(Player player) {

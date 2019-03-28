@@ -2,8 +2,10 @@ package config;
 import helpers.PropertiesManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import objects.MainPage;
+import org.testng.annotations.BeforeMethod;
 
 
 public class Configuration {
@@ -34,9 +36,15 @@ public class Configuration {
         return driver;
     }
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception{
         setUpDriver();
+    }
+
+
+//    @AfterMethod()
+    public void tearDown(){
+        driver.quit();
     }
 
     public MainPage openMainPage(){

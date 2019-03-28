@@ -1,6 +1,5 @@
 package objects;
 
-import helpers.Dates;
 import objects.Match.Match;
 import objects.Match.MatchCreator;
 import objects.Player.Player;
@@ -11,7 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MatchesPage extends BaseObjects {
@@ -24,13 +22,11 @@ public class MatchesPage extends BaseObjects {
     @FindBy(how = How.XPATH, using = "//input[@placeholder='Type first player name']")
     private WebElement firstPlayerName;
 
-    private static By playerDropdown(String playerName){
+    private static By playerDropdown(String playerName) {
         return By.xpath("//ngb-highlight[@ng-reflect-result='" + playerName + " (1000)']");
     }
 
-    private static By confirmPlayer(String playerName){
-        return By.xpath("//a[contains(text(),'" + playerName + "')]");
-    }
+//    return By.xpath("//a[contains(text(),'" + playerName + "')]/../..//button[1]");
 
     @FindBy(how = How.XPATH, using = "//input[@placeholder='HH']")
     private WebElement matchHH;
@@ -44,53 +40,81 @@ public class MatchesPage extends BaseObjects {
     @FindBy(how = How.ID, using = "matchSaveBtn")
     private WebElement matchSaveButton;
 
-    private static By getPlayerName(int i){
-        return By.xpath("//tr["+i+"]//td[1]//a");
+    private static By getPlayerName(int i) {
+        return By.xpath("//tr[" + i + "]//td[1]//a");
+    }
+
+    private void setMatchTimeStamp(Match match) {
+        typeText(matchHH, match.getHour());
+        typeText(matchMM, match.getMinute());
+    }
+
+    private void setPlayerOne(Player playerOne) {
+        typeText(firstPlayerName, playerOne.getName());
+        clickElement(playerDropdown(playerOne.getName()));
+    }
+
+    private void setPlayerTwo(Player playerTwo) {
+        typeText(secondPlayerName, playerTwo.getName());
+        clickElement(playerDropdown(playerTwo.getName()));
+    }
+
+    private void isMatchAdded(Match match) {
+        confirmMatch(match.getHour() + ":" + match.getMinute());
+    }
+
+    private static By confirmMatch(String timestamp) {
+        return By.xpath("//td[contains(text(),'" + timestamp + "')]");
+    }
+
+    private void addMatch() {
+        clickElement(addMatchButton);
+    }
+
+    private void saveMatch() {
+        clickElement(matchSaveButton);
     }
 
 
     public MatchesPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
-    public void createMatch(List<Player> playerList, int playerOneID, int playerTwoID, int addMinutesToCurrentTime){
+
+    public void createMatch(List<Player> playerList, int playerOneID, int playerTwoID, int addMinutesToCurrentTime) {
         Player playerOne = playerList.get(playerOneID);
         Player playerTwo = playerList.get(playerTwoID);
-        List<Match> matchList = matchCreator.createMatch(playerOne, playerTwo, addMinutesToCurrentTime);
-        for(Match match: matchList){
-            clickElement(addMatchButton);
-            typeText(matchHH, match.getHour());
-            typeText(matchMM, match.getMinute());
-
-            typeText(firstPlayerName,playerOne.getName());
-            clickElement(playerDropdown(playerOne.getName()));
-            typeText(secondPlayerName,playerTwo.getName());
-            clickElement(playerDropdown(playerTwo.getName()));
-            clickElement(matchSaveButton);
-            isElementVisible(confirmPlayer(playerOne.getName()));
-            isElementVisible(confirmPlayer(playerTwo.getName()));
+        List<Match> matchList = matchCreator.createOneMatch(playerOne, playerTwo, addMinutesToCurrentTime);
+        for (Match match : matchList) {
+            addMatch();
+            setMatchTimeStamp(match);
+            setPlayerOne(playerOne);
+            setPlayerTwo(playerTwo);
+            saveMatch();
+            isMatchAdded(match);
         }
     }
 
-    public void createMatchFromPlayersList(List<Player> players){
-//        List<Player> players = getPlayersList();
-//        goToMatches();
-        Player playerOne = players.get(0);
-        Player playerTwo = players.get(1);
-        List<Match> matchList = matchCreator.createMatch(playerOne, playerTwo, 10);
-        for(Match match: matchList){
-            clickElement(addMatchButton);
-            typeText(matchHH, match.getHour());
-            typeText(matchMM, match.getMinute());
-            typeText(firstPlayerName,playerOne.getName());
-            clickElement(playerDropdown(playerOne.getName()));
-            typeText(secondPlayerName,playerTwo.getName());
-            clickElement(playerDropdown(playerTwo.getName()));
-            clickElement(matchSaveButton);
-            isElementVisible(confirmPlayer(playerOne.getName()));
-            isElementVisible(confirmPlayer(playerTwo.getName()));
+    public void createMatchFromPlayersList(List<Player> playerList) {
+        int playerOneID = 0;
+        int playerTwoID = 1;
+        Player playerOne = playerList.get(playerOneID);
+        Player playerTwo = playerList.get(playerTwoID);
+        List<Match> matchList = matchCreator.createMatchFromPlayerList(playerList, playerOne, playerTwo);
+        for (Match match : matchList) {
+            addMatch();
+            setMatchTimeStamp(match);
+            setPlayerOne(playerOne);
+            setPlayerTwo(playerTwo);
+            saveMatch();
+            isMatchAdded(match);
+            try {
+                playerOne = playerList.get(playerOneID += 2);
+                playerTwo = playerList.get(playerTwoID += 2);
+            } catch (IndexOutOfBoundsException e) {
+            }
         }
     }
 
