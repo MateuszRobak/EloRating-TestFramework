@@ -30,7 +30,7 @@ dependencies {
 
 test {
     useTestNG {
-//        def suiteToRun = "src/test/java/tests/${test}.xml" as String
+        def testy = "testng"
         suites "src/test/java/tests/${testy}.xml"
     }
 }
