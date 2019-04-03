@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038e2e3b-63a9-49dd-8461-1ca023c99ee4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/LoginData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/config/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/config/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/config/Selectors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/helpers/Dates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/helpers/Dates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Match/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Match/Match.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Player/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Player/PlayerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Player/PlayerCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/PlayersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/PlayersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/ProfilePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/Selectors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/t.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdvancedTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/basicTestsSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/advancedTestsSuite.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -20,41 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="38" column="59" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gradle.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/BasicTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/config/Selectors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="293">
+              <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,10 +60,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/objects/DashboardPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/properties/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="91" selection-start-line="91" selection-start-column="2" selection-end-line="94" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/Navbar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/objects/MatchesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="23">
+              <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1485#1486#0" expanded="true" />
@@ -91,6 +121,42 @@
                 <element signature="e#2362#2363#0" expanded="true" />
                 <element signature="e#2394#2395#0" expanded="true" />
                 <element signature="e#2439#2440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/QueuePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/ProfilePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,6 +182,7 @@
       <find>try</find>
       <find>createPlayer</find>
       <find>quit</find>
+      <find>abcRioButtonContents</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Utils/Selectors.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObjects/testTest.java" />
@@ -142,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/properties/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/PropertiesManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/JSONObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/config/Selectors.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/navbar.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Players.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Profile.java" />
@@ -153,23 +218,30 @@
         <option value="$PROJECT_DIR$/src/test/java/objects/Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/QueuePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Navbar.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helpers/Dates.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/config/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/BaseObjects.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng2.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/t.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/t.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/Advanced.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/basicTestsSuite.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/advancedTestsSuite.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AdvancedTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/Selectors.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/LoginData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/config/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helpers/Dates.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" />
       </list>
     </option>
   </component>
@@ -177,7 +249,7 @@
     <option name="x" value="1920" />
     <option name="y" value="-1" />
     <option name="width" value="1920" />
-    <option name="height" value="1166" />
+    <option name="height" value="583" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +288,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EloRating-TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EloRating-TestFramework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="objects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,11 +306,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EloRating-TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EloRating-TestFramework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EloRating-TestFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EloRating-TestFramework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,10 +334,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553864640904" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554293791898" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DXTestFramework" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -277,41 +372,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.EloRating-TestFramework">
-    <configuration name="EloRating-TestFramework" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="MainTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com.williamhill.gptask.EloRating-TestFramework.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="objects.Player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MainTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.createLeaguePlayersAndMatch" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BasicTests">
+    <configuration name="BasicTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EloRating.EloRating-TestFramework.test" />
       <extension name="coverage">
         <pattern>
@@ -320,7 +382,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MainTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicTests" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicTests.createLeaguePlayersAndMatch" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EloRating.EloRating-TestFramework.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicTests" />
       <option name="METHOD_NAME" value="createLeaguePlayersAndMatch" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -329,7 +407,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.createMatchFromExistingPlayerList2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicTests.createMatchFromExistingPlayerList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EloRating.EloRating-TestFramework.test" />
       <extension name="coverage">
         <pattern>
@@ -338,7 +416,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MainTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicTests" />
+      <option name="METHOD_NAME" value="createMatchFromExistingPlayerList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicTests.createMatchFromExistingPlayerList2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EloRating.EloRating-TestFramework.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicTests" />
       <option name="METHOD_NAME" value="createMatchFromExistingPlayerList2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -347,10 +443,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/mateusz/Projects/EloRating-TestFramework/src/test/java/tests/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicTests.createMatchFromNewPlayerList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EloRating.EloRating-TestFramework.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/tests/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BasicTests" />
+      <option name="METHOD_NAME" value="createMatchFromNewPlayerList" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -359,16 +463,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EloRating-TestFramework" />
-        <item itemvalue="TestNG./home/mateusz/Projects/EloRating-TestFramework/src/test/java/tests/testng.xml" />
-        <item itemvalue="TestNG.MainTest" />
-        <item itemvalue="TestNG.MainTest.createLeaguePlayersAndMatch" />
-        <item itemvalue="TestNG.MainTest.createMatchFromExistingPlayerList2" />
+        <item itemvalue="TestNG.BasicTests" />
+        <item itemvalue="TestNG.BasicTests.createLeaguePlayersAndMatch" />
+        <item itemvalue="TestNG.BasicTests.createMatchFromNewPlayerList" />
+        <item itemvalue="TestNG.BasicTests.createMatchFromExistingPlayerList" />
+        <item itemvalue="TestNG.BasicTests.createMatchFromExistingPlayerList2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -389,41 +493,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2019.03.26 at 13h 05m 06s.xml">
-      <configuration name="MainTest" configurationId="TestNG" />
+    <history-entry file="BasicTests - 2019.04.03 at 13h 37m 21s.xml">
+      <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest_createLeaguePlayersAndMatch - 2019.03.27 at 08h 16m 11s.xml">
-      <configuration name="MainTest.createLeaguePlayersAndMatch" configurationId="TestNG" />
+    <history-entry file="BasicTests_createMatchFromExistingPlayerList2 - 2019.04.03 at 13h 38m 51s.xml">
+      <configuration name="BasicTests.createMatchFromExistingPlayerList2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest_createLeaguePlayersAndMatch - 2019.03.27 at 08h 16m 52s.xml">
-      <configuration name="MainTest.createLeaguePlayersAndMatch" configurationId="TestNG" />
+    <history-entry file="BasicTests - 2019.04.03 at 13h 46m 06s.xml">
+      <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest_createLeaguePlayersAndMatch - 2019.03.27 at 10h 21m 39s.xml">
-      <configuration name="MainTest.createLeaguePlayersAndMatch" configurationId="TestNG" />
+    <history-entry file="BasicTests_createMatchFromExistingPlayerList - 2019.04.03 at 13h 47m 16s.xml">
+      <configuration name="BasicTests.createMatchFromExistingPlayerList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest - 2019.03.27 at 10h 33m 12s.xml">
-      <configuration name="MainTest" configurationId="TestNG" />
+    <history-entry file="BasicTests - 2019.04.03 at 13h 49m 13s.xml">
+      <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest - 2019.03.27 at 10h 34m 33s.xml">
-      <configuration name="MainTest" configurationId="TestNG" />
+    <history-entry file="BasicTests_createLeaguePlayersAndMatch - 2019.04.03 at 14h 01m 49s.xml">
+      <configuration name="BasicTests.createLeaguePlayersAndMatch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTest - 2019.03.27 at 10h 55m 58s.xml">
-      <configuration name="MainTest" configurationId="TestNG" />
+    <history-entry file="BasicTests_createLeaguePlayersAndMatch - 2019.04.03 at 14h 04m 55s.xml">
+      <configuration name="BasicTests.createLeaguePlayersAndMatch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_mateusz_Projects_EloRating-TestFramework_src_test_java_tests_testng_xml - 2019.03.28 at 12h 45m 33s.xml">
-      <configuration name="/home/mateusz/Projects/EloRating-TestFramework/src/test/java/tests/testng.xml" configurationId="TestNG" />
+    <history-entry file="BasicTests_createMatchFromNewPlayerList - 2019.04.03 at 14h 10m 57s.xml">
+      <configuration name="BasicTests.createMatchFromNewPlayerList" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_mateusz_Projects_EloRating-TestFramework_src_test_java_tests_testng_xml - 2019.03.28 at 12h 48m 36s.xml">
-      <configuration name="/home/mateusz/Projects/EloRating-TestFramework/src/test/java/tests/testng.xml" configurationId="TestNG" />
+    <history-entry file="BasicTests_createLeaguePlayersAndMatch - 2019.04.03 at 14h 12m 13s.xml">
+      <configuration name="BasicTests.createLeaguePlayersAndMatch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_home_mateusz_Projects_EloRating-TestFramework_src_test_java_tests_testng_xml - 2019.03.28 at 12h 51m 47s.xml">
-      <configuration name="/home/mateusz/Projects/EloRating-TestFramework/src/test/java/tests/testng.xml" configurationId="TestNG" />
+    <history-entry file="BasicTests - 2019.04.03 at 14h 14m 18s.xml">
+      <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1166" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32017076" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33511207" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,13 +537,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32821497" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48080614" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996139" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5412668" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3541267" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35378715" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32725528" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32821497" />
@@ -490,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/properties/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-support/3.9.1/1013fc7a4b6af350b434bf245d6f4372eac268d6/selenium-support-3.9.1-sources.jar!/org/openqa/selenium/support/PageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
@@ -531,6 +629,193 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/LeagueNameCreator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/LeagueName.java" />
+    <entry file="jar://$USER_HOME$/Java/jdk1.8.0_141/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-all/54ye4nru8k2rpf7xwj15he4fo/gradle-4.10/src/testing-jvm/org/gradle/api/tasks/testing/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="954" column="16" selection-start-line="954" selection-start-column="16" selection-end-line="954" selection-end-column="16" />
+          <folding>
+            <element signature="e#27901#27902#0" expanded="true" />
+            <element signature="e#27969#27970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-all/54ye4nru8k2rpf7xwj15he4fo/gradle-4.10/src/core-api/org/gradle/api/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5400">
+          <caret line="415" column="12" selection-start-line="415" selection-start-column="12" selection-end-line="415" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/basicTestsSuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/advancedTestsSuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/PropertiesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AdvancedTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/config/LoginData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/BaseObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Java/jdk1.8.0_141/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="1873" column="16" selection-start-line="1873" selection-start-column="16" selection-end-line="1873" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/properties/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Match/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Dates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/DashboardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/QueuePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -543,8 +828,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/ProfilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="165">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="91" selection-start-line="91" selection-start-column="2" selection-end-line="94" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -561,219 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/PropertiesManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Java/jdk1.8.0_141/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/Dates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Match/Match.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/BaseObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-all/54ye4nru8k2rpf7xwj15he4fo/gradle-4.10/src/testing-jvm/org/gradle/api/tasks/testing/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="954" column="16" selection-start-line="954" selection-start-column="16" selection-end-line="954" selection-end-column="16" />
-          <folding>
-            <element signature="e#27901#27902#0" expanded="true" />
-            <element signature="e#27969#27970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10-all/54ye4nru8k2rpf7xwj15he4fo/gradle-4.10/src/core-api/org/gradle/api/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5400">
-          <caret line="415" column="12" selection-start-line="415" selection-start-column="12" selection-end-line="415" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/testng2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/t.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="59" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/Selectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/DashboardPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/MatchesPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="23">
+          <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1485#1486#0" expanded="true" />
@@ -790,10 +876,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="149">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/BasicTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="28" column="59" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

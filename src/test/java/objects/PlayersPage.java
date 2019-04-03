@@ -1,6 +1,5 @@
 package objects;
 
-import objects.Match.Match;
 import objects.Player.Player;
 import objects.Player.PlayerCreator;
 import org.openqa.selenium.By;
@@ -10,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +57,13 @@ public class PlayersPage extends BaseObjects {
         return playersQuantity+1;
     }
 
+    private void addPlayer(Player player){
+        clickElement(addPlayer);
+        setPlayerName(player.getName());
+        clickElement(createPlayer);
+        isElementVisible(playerName(player.getName()));
+    }
+
     public PlayersPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
@@ -66,57 +71,28 @@ public class PlayersPage extends BaseObjects {
     }
 
 
-//    public List<Player> getPlayers(){
-//        goToPlayersPage();
-//        int playersQuantity = driver.findElements(By.xpath("//table[@class='shadedtable table']/tr")).size();
-//        List<Player> playerList = playerCreator.getPlayers(playersQuantity, name);
-//        for(Player player: playerList){
-//            getText(getPlayerName(player.getId()));
-//
-//        }
-//        return playerList;
-//    }
-
-
     public ArrayList<Player> getPlayersList() {
-        ArrayList<Player> players = new ArrayList<>();
+        ArrayList<Player> playerList = new ArrayList<>();
         if (playersQuantity(driver) < 2) {
             Assert.assertNotEquals(playersQuantity(driver),minimumPlayersQuantity,"Players quantity is lower than " + minimumPlayersQuantity);
         }
         for (int i = 1; i < playersQuantity(driver); i++) {
             Player player = new Player();
             player.setName(getText(getPlayerName(i)));
-            players.add(player);
+            playerList.add(player);
         }
-
-        return players;
+        return playerList;
     }
 
-//    public ArrayList<Player> getPlayersList(){
-//        ArrayList<Player> players = new ArrayList<>();
-//        if(playersQuantity(driver)+1 >= 2){
-//            for(int i = 1; i<playersQuantity(driver)+1; i++){
-//                Player player = new Player();
-//                player.setName(getText(getPlayerName(i)));
-//                players.add(player);
-//            }
-//        } else{
-//            Assert.assertFalse(true);
-//        }
-//        return players;
-//    }
-
-    public List<Player> createPlayers(int playersQuantity, boolean removePlayers) throws Exception {
+    public List<Player> createPlayers(int playersQuantity) throws Exception {
         goToPlayersPage();
-        List<Player> playerList = playerCreator.createPlayers(playersQuantity);
+        List<Player> playerList = playerCreator.createPlayerList(playersQuantity);
         for (Player player : playerList) {
-            clickElement(addPlayer);
-            setPlayerName(player.getName());
-            clickElement(createPlayer);
-            isElementVisible(playerName(player.getName()));
-            if (removePlayers) {
-                removePlayer(player);
-            }
+            addPlayer(player);
+//            clickElement(addPlayer);
+//            setPlayerName(player.getName());
+//            clickElement(createPlayer);
+//            isElementVisible(playerName(player.getName()));
         } return getPlayersList();
     }
 

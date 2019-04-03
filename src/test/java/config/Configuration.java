@@ -1,12 +1,10 @@
 package config;
+
 import helpers.PropertiesManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import objects.MainPage;
 import org.testng.annotations.BeforeMethod;
-
 
 public class Configuration {
     public WebDriver driver;
@@ -16,20 +14,20 @@ public class Configuration {
         String system = PropertiesManager.PropertyReader("src/test/resources/properties/config.properties", "system").toLowerCase();
         System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 
-        if(system.equals("windows")){
-            if(browser.equals("chrome")){
-                System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver");
+        if (system.equals("windows")) {
+            if (browser.equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
                 driver = new ChromeDriver();
-            } else if (browser.equals("firefox")){
-                System.setProperty("webdriver.chrome.driver","path");
+            } else if (browser.equals("firefox")) {
+                System.setProperty("webdriver.chrome.driver", "path");
                 driver = new ChromeDriver();
             }
-        } else if (system.equals("linux")){
-            if(browser.equals("chrome")){
-                System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver");
+        } else if (system.equals("linux")) {
+            if (browser.equals("chrome")) {
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
                 driver = new ChromeDriver();
-            } else if (browser.equals("firefox")){
-                System.setProperty("webdriver.chrome.driver","path");
+            } else if (browser.equals("firefox")) {
+                System.setProperty("webdriver.chrome.driver", "path");
                 driver = new ChromeDriver();
             }
         }
@@ -37,23 +35,18 @@ public class Configuration {
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp() throws Exception{
+    public void setUp() throws Exception {
         setUpDriver();
     }
 
-
-//    @AfterMethod()
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
     }
 
-    public MainPage openMainPage(){
-        driver.get(Selectors.url);
+    public MainPage logIntoApplication() throws Exception {
+        driver.get(LoginData.url);
         driver.manage().window().maximize();
-        return new MainPage(driver);
+        MainPage mainPage = new MainPage(driver);
+        return mainPage.signIn();
     }
-
-
-
-
 }

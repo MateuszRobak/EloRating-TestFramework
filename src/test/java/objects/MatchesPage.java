@@ -75,18 +75,16 @@ public class MatchesPage extends BaseObjects {
         clickElement(matchSaveButton);
     }
 
-
     public MatchesPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-
-    public void createMatch(List<Player> playerList, int playerOneID, int playerTwoID, int addMinutesToCurrentTime) {
+    public void createMatch(List<Player> playerList, int playerOneID, int playerTwoID) {
         Player playerOne = playerList.get(playerOneID);
         Player playerTwo = playerList.get(playerTwoID);
-        List<Match> matchList = matchCreator.createOneMatch(playerOne, playerTwo, addMinutesToCurrentTime);
+        List<Match> matchList = matchCreator.createOneMatch(playerOne, playerTwo);
         for (Match match : matchList) {
             addMatch();
             setMatchTimeStamp(match);
@@ -118,31 +116,4 @@ public class MatchesPage extends BaseObjects {
         }
     }
 
-//    public ArrayList<Player> getPlayersList(){
-//        goToPlayersPage();
-//        int playersQuantity = driver.findElements(By.xpath("//table[1]//tbody[1]/tr")).size();
-//        ArrayList<Player> players = new ArrayList<>();
-//        for(int i = 1; i<playersQuantity+1; i++){
-//            Player player = new Player();
-//            player.setName(getText(getPlayerName(i)));
-//            players.add(player);
-//        }
-//        return players;
-//    }
-
-//    public String getPlayersName(int index){
-//        List<Player> playerList = getPlayersList();
-//        Player player = playerList.get(index);
-//        String player2 = player.getName();
-//        return player2;
-//    }
-//
-//    public void createMatch(String playerOne, String playerTwo){
-//        List<Match> matchList = matchCreator.createMatch(playerOne, playerTwo);
-//        for(Match match: matchList){
-//            clickElement(addMatchButton);
-//            typeText(firstPlayerName,playerOne);
-//            typeText(secondPlayerName,playerTwo);
-//        }
-//    }
 }

@@ -3,8 +3,7 @@
 <suite name="Elo Suite" verbose="1">
     <test name="AddPlayers">
         <classes>
-            <class name="tests.t"/>
-
+            <class name="tests.BasicTests"/>
         </classes>
     </test>
 </suite>

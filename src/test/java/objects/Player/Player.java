@@ -19,10 +19,4 @@ public class Player {
     public void setName(String name){
         this.name = name;
     }
-
-    public String getPlayerNameForMatch(int id){
-        this.id = id;
-        return name;
-    }
-
 }

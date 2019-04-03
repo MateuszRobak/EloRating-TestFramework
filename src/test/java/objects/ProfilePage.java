@@ -1,6 +1,5 @@
 package objects;
-
-import config.Selectors;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +18,10 @@ public class ProfilePage extends BaseObjects{
     @FindBy(how = How.XPATH, using = "//h2[@class='mt-2']")
     private WebElement playerMatchesHeader;
 
+    public static By leagueList(String league){
+        return By.xpath("//a[contains(text(),'" +league+"')]");
+    }
+
     public ProfilePage(WebDriver driver){
         super(driver);
         this.driver = driver;
@@ -30,16 +33,13 @@ public class ProfilePage extends BaseObjects{
         return this;
     }
 
-    public ProfilePage isLeagueInLeagueList(String league){
-        goToLeagues();
+    public ProfilePage isLeagueInLeagueList(String league){;
         try {
-            isElementVisible(Selectors.leagueList(league));
+            isElementVisible(leagueList(league));
             System.out.println("League: " + league + " found");
         } catch (Exception e){
             throw e;
         }
         return this;
     }
-
-
 }

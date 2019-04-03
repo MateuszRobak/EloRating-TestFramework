@@ -20,20 +20,9 @@ dependencies {
     testCompile 'org.testng:testng:6.10'
     implementation 'org.testng:testng:6.9.6'
 }
-//testSuite = "unit"
-//test {
-//    systemProperty "browser", System.getProperty("browser")
-//    useTestNG(){
-//        suites 'src/test/java/tests/testng.xml'
-//    }
-//}
-
 test {
     useTestNG {
         def testy = "testng"
         suites "src/test/java/tests/${testy}.xml"
     }
 }
-
-
-//src/test/java/tests/testng.xml

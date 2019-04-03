@@ -1,6 +1,6 @@
 package objects;
 
-import config.Selectors;
+import config.LoginData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,7 @@ public class MainPage extends BaseObjects {
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Create league')]")
     private WebElement createLeagueButton;
 
-    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Sign in')]")
+    @FindBy(how = How.XPATH, using = "//span[@class='abcRioButtonContents']")
     private WebElement signIn;
 
     @FindBy(how = How.XPATH, using = "//input[@name='identifier']")
@@ -74,10 +74,10 @@ public class MainPage extends BaseObjects {
             driver.manage().window().maximize();
 
         }
-        typeText(login, Selectors.username);
+        typeText(login, LoginData.username);
         clickElement(next);
         Thread.sleep(1000);
-        typeText(password, Selectors.passwordUser);
+        typeText(password, LoginData.passwordUser);
         clickElement(next);
         driver.switchTo().window(parentWindow);
         isElementVisible(rounded);

@@ -1,13 +1,10 @@
 package objects.Match;
 
-import objects.Player.Player;
-
 public class Match {
     String plaeyrOne;
     String playerTwo;
     String hour;
     String minute;
-    Player player;
 
     int id;
 
@@ -50,7 +47,6 @@ public class Match {
     public void setMinute(String minute) {
         this.minute = minute;
     }
-
 
 
 }
