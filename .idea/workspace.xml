@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="038e2e3b-63a9-49dd-8461-1ca023c99ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/LoginData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/config/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/config/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/config/Selectors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/helpers/Dates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/helpers/Dates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Match/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Match/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/Player/PlayerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/Player/PlayerCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/PlayersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/PlayersPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/objects/ProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/objects/ProfilePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/tests/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/Selectors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/Dates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Match/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/Player/PlayerCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/PlayersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/objects/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/t.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AdvancedTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/basicTestsSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/advancedTestsSuite.xml" afterDir="false" />
-    </list>
+    <list default="true" id="038e2e3b-63a9-49dd-8461-1ca023c99ee4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -47,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/BasicTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="293">
@@ -71,20 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
+            <state relative-caret-position="1335">
               <caret line="91" selection-start-line="91" selection-start-column="2" selection-end-line="94" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/objects/Navbar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/objects/MatchesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="-202">
               <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,6 +81,15 @@
                 <element signature="e#2394#2395#0" expanded="true" />
                 <element signature="e#2439#2440#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -141,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/objects/ProfilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-67">
               <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -217,11 +185,9 @@
         <option value="$PROJECT_DIR$/src/test/java/objects/LeagueName.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/QueuePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/objects/Navbar.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/BaseObjects.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/testng2.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/MainTest.java" />
@@ -242,6 +208,8 @@
         <option value="$PROJECT_DIR$/src/test/java/objects/Match/MatchCreator.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/objects/Navbar.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -334,7 +302,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554293791898" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554293820855" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DXTestFramework" />
@@ -526,7 +494,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1166" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33511207" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -537,13 +504,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32821497" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5412668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5412668" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35378715" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.353167" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32725528" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32821497" />
@@ -665,13 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -816,66 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/QueuePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/ProfilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="91" selection-start-line="91" selection-start-column="2" selection-end-line="94" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Navbar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/objects/MatchesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2318#2319#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2394#2395#0" expanded="true" />
-            <element signature="e#2439#2440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/objects/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -893,6 +793,73 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/MatchesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2287#2288#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2439#2440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/Navbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/PlayersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="91" selection-start-line="91" selection-start-column="2" selection-end-line="94" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/QueuePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/objects/ProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
