@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="038e2e3b-63a9-49dd-8461-1ca023c99ee4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,13 +40,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="89" />
+          <entry key="java" value="117" />
           <entry key="properties" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="89" />
+          <entry key="JAVA" value="117" />
           <entry key="Properties" value="9" />
         </counts>
       </usages-collector>
@@ -64,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/BasicTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/objects/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -567,10 +560,10 @@
         <option value="$PROJECT_DIR$/src/test/java/objects/MatchesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/objects/Navbar.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/resources/properties/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/objects/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/BasicTests.java" />
       </list>
     </option>
   </component>
@@ -661,7 +654,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560699738968" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560699866455" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -827,9 +820,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasicTests - 2019.06.16 at 17h 23m 18s.xml">
-      <configuration name="BasicTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BasicTests - 2019.06.16 at 17h 24m 42s.xml">
       <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
@@ -857,6 +847,9 @@
     <history-entry file="BasicTests - 2019.06.16 at 17h 38m 14s.xml">
       <configuration name="BasicTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="BasicTests - 2019.06.16 at 17h 42m 17s.xml">
+      <configuration name="BasicTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1456" height="886" extended-state="6" />
@@ -871,16 +864,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32821497" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2912234" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2912234" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35239363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35239363" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32725528" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32821497" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32712767" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1008,15 +1001,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/BasicTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
