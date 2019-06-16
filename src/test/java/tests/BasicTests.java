@@ -20,7 +20,7 @@ public class BasicTests extends Configuration{
         matchesPage.createMatch(playerList, 1,2);
     }
 
-    @Test()
+//    @Test()
     public void createLeaguePlayersAndMatch() throws Exception {
         MainPage mainPage = logIntoApplication().createLeague();
         PlayersPage playersPage = mainPage.goToPlayersPage();

@@ -25,8 +25,11 @@ public class MainPage extends BaseObjects {
     @FindBy(how = How.XPATH, using = "//input[@name='identifier']")
     private WebElement login;
 
-    @FindBy(how = How.XPATH, using = "//content[@class='CwaK9']/span[1]")
+    @FindBy(how = How.ID, using = "identifierNext")
     private WebElement next;
+
+    @FindBy(how = How.ID, using = "passwordNext")
+    private WebElement passwordNext;
 
     @FindBy(how = How.XPATH, using = "//input[@name='password']")
     private WebElement password;
@@ -78,7 +81,7 @@ public class MainPage extends BaseObjects {
         clickElement(next);
         Thread.sleep(1000);
         typeText(password, LoginData.passwordUser);
-        clickElement(next);
+        clickElement(passwordNext);
         driver.switchTo().window(parentWindow);
         isElementVisible(rounded);
         return this;

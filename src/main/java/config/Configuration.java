@@ -12,11 +12,11 @@ public class Configuration {
     public WebDriver setUpDriver() throws Exception {
         String browser = PropertiesManager.PropertyReader("src/test/resources/properties/config.properties", "browser").toLowerCase();
         String system = PropertiesManager.PropertyReader("src/test/resources/properties/config.properties", "system").toLowerCase();
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 
         if (system.equals("windows")) {
             if (browser.equals("chrome")) {
-                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
                 driver = new ChromeDriver();
             } else if (browser.equals("firefox")) {
                 System.setProperty("webdriver.chrome.driver", "path");
